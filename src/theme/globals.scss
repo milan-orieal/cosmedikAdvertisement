@@ -1,0 +1,26 @@
+// Google Font Import
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Marcellus&display=swap');
+
+// Font Faces
+@font-face {
+  font-family: 'Melodrama_Bold';
+  src: url("../assets/fonts/Melodrama-Bold.woff2");
+}
+
+@font-face {
+  font-family: 'Melodrama_Semibold';
+  src: url("../assets/fonts/Melodrama-Semibold.woff2");
+}
+
+@font-face {
+  font-family: 'Melodrama_Medium';
+  src: url("../assets/fonts/Melodrama-Medium.woff2");
+}
+
+// SCSS Import
+@import "mixins";
+@import "reset";
+@import "theme";
+@import "components";
+@import "home";
+

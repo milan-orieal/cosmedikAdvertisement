@@ -1,0 +1,39 @@
+:root {
+  --primary-color           : #FFD473;
+  --primary-dark            : #E0B555;
+  --primary-neutral         : #EBAB1B;
+  --primary-light           : #FFEFCA;
+  --primary-text            : #FFFFFF;
+
+  --accent-color            : #BF6EFD;
+  --accent-light            : #F2E2FF;
+
+  --common-gradient         : linear-gradient(35deg, rgba(191,110,253,1) 0%, rgba(255,212,115,1) 100%);
+  --common-reverse          : linear-gradient(35deg, rgba(255,212,115,1) 0%, rgba(191,110,253,1) 100%);
+  --radial-gradient         : radial-gradient(circle, rgba(255,212,115,1) 0%, rgba(191,110,253,1) 100%);
+  --white-gradient          : linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.4) 100%);
+  --gray-gradient           : linear-gradient(135deg, rgba(114,114,114,0.1) 0%, rgba(114,114,114,0.08) 100%);
+
+  --bg-color                : #FFFCF1;
+  --bg-white                : #FFFFFF;
+  --bg-footer               : #04070D;
+
+  --text-dark               : #1D1D1D;
+  --text-medium             : #616161;
+  --text-light              : #878787;
+  --text-white              : #FFFFFF;
+  --text-subtitle           : #C96C4E;
+
+  --card-shadow             : 0 4px 16px rgba(0, 0, 0, 0.03);
+  --testimonial-shadow      : 0 2px 10px 2px rgba(0, 0, 0, 0.03);
+
+  --border-color            : #737B7D;
+  --border-light            : #E2E2E2;
+  --border-dark             : #000000;
+  --border-alt              : #DEDEDE;
+  --bg-header               : #FFF8EA;
+
+  --transition-sm           : all .3s ease-in-out;
+  --transition-md           : all .5s ease-in-out;
+  --transition-lg           : all .7s ease-in-out;
+}

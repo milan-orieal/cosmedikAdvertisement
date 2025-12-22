@@ -1,0 +1,36 @@
+// Mixins
+@mixin laptop_large {
+  @media screen and (max-width: 1660px) {
+    @content;
+  }
+}
+
+@mixin laptop_medium {
+  @media screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin laptop_small {
+  @media screen and (max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin tablet__landscape {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet__portrait {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 540px) {
+    @content;
+  }
+}

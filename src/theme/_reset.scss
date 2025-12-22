@@ -1,0 +1,225 @@
+// Reset CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Albert Sans", serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: Melodrama_Bold, sans-serif;
+}
+
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: Melodrama_Semibold, sans-serif;
+}
+
+p {
+  display: block;
+  margin: 0;
+  line-height: 1.6;
+}
+
+a,
+button {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Container
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 1320px;
+  }
+
+  @media (min-width: 1920px) {
+    max-width: 1320px;
+  }
+}
+
+// Section
+.section {
+  position: relative;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    padding-bottom: 50px;
+
+    &.align-row {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+    }
+
+    &.align-grid {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      text-align: left;
+
+      @include tablet__portrait {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .section__text {
+        margin: 0;
+        max-width: none;
+      }
+
+      .section__title {
+        margin-bottom: 30px;
+      }
+    }
+
+    &.align-left {
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      .section__title {
+        text-align: left;
+      }
+    }
+
+    &.theme-light {
+
+      .section__title,
+      .section__text,
+      .section__subtitle {
+        color: var(--text-white);
+      }
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-subtitle);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 48px;
+    color: var(--text-dark);
+
+    font-weight: 700;
+
+    font-size: 48px;
+    leading-trim: NONE;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: center;
+
+
+    @include mobile {
+      font-size: 36px;
+    }
+
+    br {
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    display: block;
+
+    color: var(--text-medium);
+    max-width: 60%;
+    margin: 0 auto;
+    font-family: Albert Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 1.4;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #878787;
+;
+
+    @include tablet__portrait {
+      font-size: 16px;
+      max-width: none;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 80px;
+  }
+}
