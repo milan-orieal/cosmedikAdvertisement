@@ -2,8 +2,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Star } from "@phosphor-icons/react";
 
-import Quote from "../../assets/images/quote-icon.svg";
+import Quote from "../../assets/images/quoteIcon.svg";
 import {motion} from "motion/react";
 
 interface TestimonialData {
@@ -89,7 +90,9 @@ const Testimonial = () => {
                                 <div className="testimonial__item">
                                     <div className="testimonial__header">
                                         <div className="testimonial__rating">
-                                            {"★★★★★"}
+                                            {[...Array(5)].map((_, i) => (
+                                                <Star key={i} size={20} weight="fill" color="#EBAB1B" />
+                                            ))}
                                         </div>
                                         <i className="testimonial__icon">
                                             <img src={Quote} alt="Cosmediks" />

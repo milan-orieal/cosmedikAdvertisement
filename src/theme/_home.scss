@@ -1,6 +1,7 @@
 // Banner
 .hero__wrapper {
   background-image: url(../assets//images//heroBackground.png);
+  background-size: cover;
   display: flex;
   box-shadow: 4px 4px 40px -20px #FFD47366 inset;
   background-color: #FCECCF0D;
@@ -848,19 +849,20 @@
 
   &:before {
     content: "";
-    display: inline-block;
+    display: block;
     background-image: url("../assets/images/quote-bg.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 0;
     transform: translateY(-40%);
     width: 465px;
     height: 380px;
     opacity: 0.3;
-    z-index: 1;
+    z-index: 0;
+    pointer-events: none;
 
     @include mobile {
       width: 100%;
@@ -870,7 +872,8 @@
   }
 
   .container {
-    z-index: 2;
+    position: relative;
+    z-index: 1;
   }
 
   .swiper {
@@ -1413,6 +1416,7 @@
     }
 
     p {
+      width: 80%;
       font-size: 15px;
       font-weight: 400;
       color: #787878;
@@ -1422,15 +1426,16 @@
       font-style: Regular;
       font-size: 18px;
       leading-trim: NONE;
-      line-height: 100%;
+      line-height: 1.4;
       letter-spacing: 0%;
+    
 
-      @include mobile {
-        font-size: 15px;
-        line-height: 1.4;
-      }
+    @include mobile {
+      font-size: 15px;
+      line-height: 1.4;
     }
   }
+}
 }
 
 // Keyframes
@@ -1585,7 +1590,7 @@
     leading-trim: NONE;
     line-height: 54px;
     letter-spacing: 0%;
-    padding-top:12px;
+    padding-top: 12px;
 
     @include tablet__portrait {
       font-size: 40px;
@@ -1635,7 +1640,7 @@
       line-height: 100%;
       letter-spacing: 0%;
       color: #1D1D1D;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
 
       @include mobile {
         font-size: 22px;
@@ -1649,7 +1654,7 @@
       margin: 0;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 15px;
     }
 
     li {
@@ -1789,7 +1794,7 @@
   &__field {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     margin-bottom: 20px;
 
     @include mobile {
@@ -1891,7 +1896,7 @@
   &__card {
     background: #fff;
     border-radius: 24px;
-    padding: 50px 40px;
+    padding: 85px 40px;
     text-align: center;
     position: relative;
 
@@ -1995,7 +2000,7 @@
 
   &__icon {
     display: inline-flex;
-    
+
     svg {
       fill: url(#gradient-icon);
     }
@@ -2027,7 +2032,7 @@
       font-family: Albert Sans;
       font-weight: 500;
       font-style: Medium;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 100%;
       letter-spacing: 0%;
       vertical-align: middle;

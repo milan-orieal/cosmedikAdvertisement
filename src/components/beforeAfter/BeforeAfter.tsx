@@ -9,6 +9,7 @@ import Gallery4 from "../../assets/images/Gallery 4.png";
 import Gallery5 from "../../assets/images/Gallery 5.png";
 
 const images = [Gallery1, Gallery2, Gallery3, Gallery4, Gallery5];
+const duplicatedImages = [...images, ...images, ...images];
 
 const BeforeAfter = () => {
     return (
@@ -24,14 +25,16 @@ const BeforeAfter = () => {
                         delay: 2000,
                         disableOnInteraction: false,
                         pauseOnMouseEnter: false,
+                        stopOnLastSlide: false,
                     }}
                     speed={800}
                     loop={true}
+                    rewind={false}
                     modules={[Autoplay]}
                 >
-                    {images.map((img, index) => (
+                    {duplicatedImages.map((img, index) => (
                         <SwiperSlide key={index} className="before-after__slide">
-                            <img src={img} alt={`Gallery ${index + 1}`} />
+                            <img src={img} alt={`Gallery ${(index % images.length) + 1}`} />
                         </SwiperSlide>
                     ))}
                 </Swiper>
