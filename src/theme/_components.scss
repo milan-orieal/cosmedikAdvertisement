@@ -199,8 +199,20 @@
   align-items: center;
   justify-content: center;
 
+  @include tablet__portrait {
+    display: flex;
+    width: 56px;
+    height: 56px;
+    bottom: 20px;
+    right: 20px;
+  }
+
   @include mobile {
     display: flex;
+    width: 64px;
+    height: 64px;
+    bottom: 20px;
+    right: 20px;
   }
 
   &:hover {
@@ -237,6 +249,11 @@
     &:hover {
       background: var(--common-reverse);
     }
+
+    @include mobile {
+      padding: 16px 24px;
+      min-height: 52px;
+    }
   }
 
   &.btn-chat {
@@ -258,6 +275,11 @@
 
     &:hover {
       background: linear-gradient(253.29deg, #1EBEA5 3.35%, #00E676 98.01%);
+    }
+
+    @include mobile {
+      padding: 16px 24px;
+      min-height: 52px;
     }
   }
 

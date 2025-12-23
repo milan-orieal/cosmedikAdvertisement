@@ -80,7 +80,7 @@ select {
     padding-right: 40px;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -113,6 +113,11 @@ select {
     text-align: center;
     gap: 15px;
     padding-bottom: 50px;
+
+    @include tablet__portrait {
+      padding-bottom: 40px;
+      gap: 12px;
+    }
 
     &.align-row {
       flex-direction: row;
@@ -179,6 +184,10 @@ select {
     letter-spacing: 0%;
     text-align: center;
 
+    @include tablet__portrait {
+      font-size: 40px;
+      line-height: 48px;
+    }
 
     @include mobile {
       font-size: 36px;
@@ -206,11 +215,16 @@ select {
     letter-spacing: 0%;
     text-align: center;
     color: #878787;
-;
+    ;
 
     @include tablet__portrait {
       font-size: 16px;
       max-width: none;
+    }
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 1.5;
     }
   }
 

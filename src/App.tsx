@@ -18,8 +18,8 @@ function App() {
       <Hero/>
       <Why/>
       <RightForYou/>
-      <BeforeAfter/>
       <Testimonial/>  
+      <BeforeAfter/>
       <Contact/>
       <LimitedSlots/>
       <SimpleFooter/>

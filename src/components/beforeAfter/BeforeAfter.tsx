@@ -15,7 +15,9 @@ const BeforeAfter = () => {
     return (
         <section className="before-after">
             <div className="before-after__header">
-                <h2 className="before-after__title">Hair Transplant - Before & After</h2>
+                <h2 className="before-after__title">
+                    Hair Transplant - <br className="mobile-break" />Before & After
+                </h2>
             </div>
             <div className="before-after__slider">
                 <Swiper

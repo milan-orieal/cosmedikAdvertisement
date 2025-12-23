@@ -14,7 +14,7 @@ const Header = () => {
                         <span className='hero__wrapper__left__subtitle'>Hair Transplant in Kochi</span>
                         <h1 className='hero__wrapper__left__title'>Natural Hair <br /> Restoration by <br />Expert Doctors</h1>
                         <span className='hero__wrapper__left__tagline' >Restore your hairline. Regain your confidence</span>
-                        <span className='hero__wrapper__left__details'>Get advanced, doctor‑led hair transplant treatment in Kochi <br /> with natural, permanent results.</span>
+                        <span className='hero__wrapper__left__details'>Get advanced, doctor‑led hair transplant treatment in Kochi <br className="desktop-break" /> with natural, permanent results.</span>
                         <div className='hero__wrapper__left__contactButtons'>
                             <Button onClick={() => navigate("/contact")}>
                                 <PhoneCallIcon size={20} weight="fill" />
